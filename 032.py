@@ -12,4 +12,3 @@ if pri == 0:
         print('É um ano bissexto')
 else:
     print('Não é bissexto')
-
