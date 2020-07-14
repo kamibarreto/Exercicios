@@ -1,7 +1,15 @@
-ano = int(input('Digite o ano que deseja averiguar: '))
-bis = ano % 4
-bis2 = ano % 100
-if bis == 0
-    print('O ano de {} é bissexto'.format(ano))
-else: 
-    print('O ano de {} não é bissexto'.format(ano))
+n = int(input('Digite o ano: '))
+pri = n % 4
+if pri == 0:
+    n1 = n % 100
+    if n1 == 0:
+        ter = n % 400
+        if ter == 0:
+            print('É um ano bissexto')
+        else:
+            print('Não é bissexto')
+    else:
+        print('É um ano bissexto')
+else:
+    print('Não é bissexto')
+
